@@ -5,9 +5,11 @@
   $body.classList.remove('no-js');
   $body.classList.add('js');
   
-  var $sections = $body.querySelectorAll('section');
   
+  var $sections = $body.querySelectorAll('section');
   var $icon = $body.querySelectorAll('i');
+  var $container = $body.querySelector('.container');
+  var $topMenu = $body.querySelector('nav');
   
   for(var i=1; i<=3; i++)
     $sections[i].classList.add('disabled');
@@ -19,11 +21,28 @@
   
   
   
+  
+  function adjustHome(){
+    for(var i=0; i<$sections.length; i++){
+      if($sections[i].classList[0] === 'home' && $sections[i].classList[1] === 'actived'){
+        $container.style.maxWidth = '350px';
+        $topMenu.classList.add('disabled');
+        break;
+      }
+      else {
+        $container.style.maxWidth = '600px';
+        $topMenu.classList.remove('disabled');
+        break;
+      }
+    }
+  }
+  adjustHome();
+  
+  
   function clickIcon(){
-    
-    
     disableCurrentSection();
     showSection(this.id);
+    adjustHome();
   }
   
   function disableCurrentSection(){
@@ -52,17 +71,10 @@
           $sections[i].classList.remove('disabled');
           $sections[i].classList.add('actived');
         }
-        
-        
       }
     }
   }
   
-  for(var i = 0; i < $sections.length; i++) {
-    //if($sections[i].classList === "actived") {
-      //console.log($sections[i].classList);
-    //}
-  }
   
-  //console.log($sections)
+  
 })();
