@@ -152,6 +152,33 @@ body h1, body h2 {
   background-position: 0px 0px;
   background-size: 200px 200px;
 }
+.portfolio .grid-portfolio a #img02 {
+  background: url("../images/img02.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+}
+.portfolio .grid-portfolio a #img02:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+.portfolio .grid-portfolio a #img03 {
+  background: url("../images/img03.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+}
+.portfolio .grid-portfolio a #img03:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+.portfolio .grid-portfolio a #img04 {
+  background: url("../images/img04.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+}
+.portfolio .grid-portfolio a #img04:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
 
 footer p {
   font-size: 12px;

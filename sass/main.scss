@@ -167,6 +167,36 @@ body {
           background-size: 200px 200px
         }
       }
+      #img02 {
+        background: url('../images/img02.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+
+        &:hover {
+          background-position: 0px 0px;
+          background-size: 200px 200px
+        }
+      }
+      #img03 {
+        background: url('../images/img03.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+
+        &:hover {
+          background-position: 0px 0px;
+          background-size: 200px 200px
+        }
+      }
+      #img04 {
+        background: url('../images/img04.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+
+        &:hover {
+          background-position: 0px 0px;
+          background-size: 200px 200px
+        }
+      }
     }
   }
 }
